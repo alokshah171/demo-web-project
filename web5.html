@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Image Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            letter-spacing: 2px;
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        
+        @media (max-width: 992px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+
+        
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Responsive Gallery</h1>
+</header>
+
+<section class="gallery">
+    <img src="https://www.istockphoto.com/stock-photos/nature-and-landscapes"alt="Nature">
+    <img src="https://www.istockphoto.com/photos/himalaya-mountain"alt="Mountain">
+    <img src="https://www.freepik.com/free-photos-vectors/beautiful-beach"alt="Beach">
+    <img src="https://www.freepik.com/free-photos-vectors/city-night" alt="City">
+    <img src="https://www.freepik.com/free-photos-vectors/beautiful-forest"alt="Forest">
+    <img src="https://unsplash.com/s/photos/beach-sunset" alt="Sunset">
+    <img src="https://www.vecteezy.com/free-photos/river"alt="River">
+    <img src="https://www.1800flowers.com/articles/flower-facts/most-beautiful-flowers"alt="Flowers">
+</section>
+
+<footer>
+    © 2026 Responsive Gallery | Designed by Alok
+</footer>
+
+</body>
+</html>
